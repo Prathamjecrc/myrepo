@@ -1,0 +1,2471 @@
+2024-09-26 12:01:01 [::1][9][n7m21lfrlme9gmomgfvq77o4r8][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\wamp64\www\advanced\backend\views\subject\index.php in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php:234
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\SubjectController))
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\SubjectController))
+#2 C:\wamp64\www\advanced\backend\controllers\SubjectController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: backend\controllers\SubjectController->actionIndex()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('subject', Array)
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2024-09-26 12:01:00 [::1][9][n7m21lfrlme9gmomgfvq77o4r8][info][application] $_GET = [
+    'r' => 'subject'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'c9c676381f35e81323f2d256c2ae0e896a9eeb46b0bd77bf5f38dc1b26b6ceefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D4eTypxEQhy-zvJX5eqRMPN18NPEAv6O\";}'
+    'PHPSESSID' => '2h17d7en5q6lkvfbec7tmskln2'
+    'advanced-backend' => 'n7m21lfrlme9gmomgfvq77o4r8'
+    '_identity-backend' => '331b5f17419fe4b4e1a121485f0e7bc4ef1410e041b8a91a5043235644dbfe70a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[9,\"exLBdx0gOT-wVJgPVFnmAsasSRDE6Riu\",2592000]\";}'
+    '_csrf-backend' => 'f73ccb9b2a31d3752e20a2b7922bd63e3488306c0fa0bb558d4eec24b5dd523da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"HZK2f9LbRenO5q6uZK1vl1Y1ZTElTf5f\";}'
+    'advanced-frontend' => 'l9c6og74jl9jh7d1baprbtp73i'
+    '_identity-frontend' => 'ec67b6314efb067e5650a260942b85b287bd725b9b4239e5b74265f17fa46882a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[9,\"exLBdx0gOT-wVJgPVFnmAsasSRDE6Riu\",2592000]\";}'
+    '_csrf-frontend' => 'fe4a3e1728ed139099777a1f8ca27690f2ed88747bda88af54ad0b7d79915ef4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"77RE4XnKSysCprBrr9xMwBIM2mCW4PCA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/'
+    '__id' => 9
+    '__authKey' => 'exLBdx0gOT-wVJgPVFnmAsasSRDE6Riu'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Brave\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_COOKIE' => '_csrf=c9c676381f35e81323f2d256c2ae0e896a9eeb46b0bd77bf5f38dc1b26b6ceefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D4eTypxEQhy-zvJX5eqRMPN18NPEAv6O%22%3B%7D; PHPSESSID=2h17d7en5q6lkvfbec7tmskln2; advanced-backend=n7m21lfrlme9gmomgfvq77o4r8; _identity-backend=331b5f17419fe4b4e1a121485f0e7bc4ef1410e041b8a91a5043235644dbfe70a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B9%2C%22exLBdx0gOT-wVJgPVFnmAsasSRDE6Riu%22%2C2592000%5D%22%3B%7D; _csrf-backend=f73ccb9b2a31d3752e20a2b7922bd63e3488306c0fa0bb558d4eec24b5dd523da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22HZK2f9LbRenO5q6uZK1vl1Y1ZTElTf5f%22%3B%7D; advanced-frontend=l9c6og74jl9jh7d1baprbtp73i; _identity-frontend=ec67b6314efb067e5650a260942b85b287bd725b9b4239e5b74265f17fa46882a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B9%2C%22exLBdx0gOT-wVJgPVFnmAsasSRDE6Riu%22%2C2592000%5D%22%3B%7D; _csrf-frontend=fe4a3e1728ed139099777a1f8ca27690f2ed88747bda88af54ad0b7d79915ef4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2277RE4XnKSysCprBrr9xMwBIM2mCW4PCA%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.2.18;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '55621'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subject'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=subject'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727352060.9673
+    'REQUEST_TIME' => 1727352060
+]
+2024-09-27 04:59:25 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\data\Pagination::pagetype in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\BaseObject->__set('pagetype', 1)
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\Pagination), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\data\\Pagina...', Array, Array)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\data\\Pagina...', Array, Array)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\data\BaseDataProvider.php(219): yii\BaseYii::createObject(Array)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Component.php(180): yii\data\BaseDataProvider->setPagination(Array)
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\Component->__set('pagination', Array)
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\ActiveDataProvider), Array)
+#10 C:\wamp64\www\advanced\backend\models\StudentSearch.php(47): yii\base\BaseObject->__construct(Array)
+#11 C:\wamp64\www\advanced\backend\controllers\StudentController.php(42): backend\models\StudentSearch->search(Array)
+#12 [internal function]: backend\controllers\StudentController->actionIndex()
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/', Array)
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#19 {main}
+2024-09-27 04:59:25 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '51034'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student/'
+    'REQUEST_URI' => '/advanced/backend/web/?r=student/'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727413165.7112
+    'REQUEST_TIME' => 1727413165
+]
+2024-09-27 05:01:57 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\data\Pagination::pagination in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\BaseObject->__set('pagination', 1)
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\Pagination), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\data\\Pagina...', Array, Array)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\data\\Pagina...', Array, Array)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\data\BaseDataProvider.php(219): yii\BaseYii::createObject(Array)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Component.php(180): yii\data\BaseDataProvider->setPagination(Array)
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\Component->__set('pagination', Array)
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\ActiveDataProvider), Array)
+#10 C:\wamp64\www\advanced\backend\models\StudentSearch.php(47): yii\base\BaseObject->__construct(Array)
+#11 C:\wamp64\www\advanced\backend\controllers\StudentController.php(42): backend\models\StudentSearch->search(Array)
+#12 [internal function]: backend\controllers\StudentController->actionIndex()
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/', Array)
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#19 {main}
+2024-09-27 05:01:57 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '51051'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student/'
+    'REQUEST_URI' => '/advanced/backend/web/?r=student/'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727413317.8319
+    'REQUEST_TIME' => 1727413317
+]
+2024-09-27 08:08:34 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][Error] Error: Object of class backend\models\Student could not be converted to string in C:\wamp64\www\advanced\backend\views\student\index.php:45
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(backend\models\Student), 1, 0, Object(yii\grid\DataColumn))
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(252): call_user_func(Object(Closure), Object(backend\models\Student), 1, 0, Object(yii\grid\DataColumn))
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(266): yii\grid\DataColumn->getDataCellValue(Object(backend\models\Student), 1, 0)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Student), 1, 0)
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(backend\models\Student), 1, 0)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(backend\models\Student), 1, 0)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#10 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#14 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\StudentController->actionIndex()
+#21 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#27 {main}
+2024-09-27 08:08:34 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/index'
+    'sort' => 'class'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52124'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex&sort=class'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=student%2Findex&sort=class'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727424514.2695
+    'REQUEST_TIME' => 1727424514
+]
+2024-09-27 08:10:11 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][Error] Error: Object of class backend\models\Student could not be converted to string in C:\wamp64\www\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php:118
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(498): yii\helpers\BaseHtml::encode(Object(backend\models\Student))
+#1 [internal function]: yii\i18n\Formatter->asText(Object(backend\models\Student))
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(463): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(266): yii\i18n\Formatter->format(Object(backend\models\Student), 'text')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Student), 2, 1)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(backend\models\Student), 2, 1)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(backend\models\Student), 2, 1)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#15 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#20 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\StudentController->actionIndex()
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#26 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+2024-09-27 08:10:10 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/index'
+    'sort' => 'class'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52139'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex&sort=class'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=student%2Findex&sort=class'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727424610.9186
+    'REQUEST_TIME' => 1727424610
+]
+2024-09-27 08:10:30 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][Error] Error: Object of class backend\models\Student could not be converted to string in C:\wamp64\www\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php:118
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(498): yii\helpers\BaseHtml::encode(Object(backend\models\Student))
+#1 [internal function]: yii\i18n\Formatter->asText(Object(backend\models\Student))
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(463): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(266): yii\i18n\Formatter->format(Object(backend\models\Student), 'text')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Student), 2, 1)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(backend\models\Student), 2, 1)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(backend\models\Student), 2, 1)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#15 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#20 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\StudentController->actionIndex()
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#26 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+2024-09-27 08:10:30 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/index'
+    'sort' => 'class'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52145'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex&sort=class'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=student%2Findex&sort=class'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727424630.4141
+    'REQUEST_TIME' => 1727424630
+]
+2024-09-27 08:11:31 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\ErrorException:2] yii\base\ErrorException: Array to string conversion in C:\wamp64\www\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php:118
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(118): yii\web\ErrorHandler->handleError(code: '2', message: ''Array to strin...', file: ''C:\\\\wamp64\\\\ww...', line: '118')
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(498): yii\helpers\BaseHtml::encode(content: '[0 => class bac...', doubleEncode: '???')
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(463): yii\i18n\Formatter->asText(value: '[0 => class bac...')
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(463): ::call_user_func_array:{C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php:463}(callback: '[0 => class yii...', args: '[0 => [0 => cla...')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(266): yii\i18n\Formatter->format(value: '[0 => class bac...', format: ''text'')
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(model: 'class backend\\m...', key: '2', index: '1')
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\DataColumn->renderDataCell(model: 'class backend\\m...', key: '2', index: '1')
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(model: 'class backend\\m...', key: '2', index: '1')
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(326): yii\grid\GridView->renderSection(name: ''{items}'')
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection(name: ''{items}'')
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): yii\grid\GridView->yii\widgets\{closure:C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php:134-138}(matches: '[0 => '{items}'...')
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): ::preg_replace_callback(pattern: ''/{\\\\w+}/'', callback: 'class Closure {...', subject: ''{summary}\\n{it...')
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(301): yii\grid\GridView->run()
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#16 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(config: '['dataProvider'...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): yii\web\View->unknown()
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\web\View->renderPhpFile(_file_: ''C:\\\\wamp64\\\\ww...', _params_: '['searchModel' ...')
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\web\View->renderFile(viewFile: ''C:\\\\wamp64\\\\ww...', params: '['searchModel' ...', context: 'class backend\\c...')
+#20 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\web\View->render(view: ''index'', params: '['searchModel' ...', context: 'class backend\\c...')
+#21 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): backend\controllers\StudentController->render(view: ''index'', params: '['searchModel' ...')
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\StudentController->actionIndex()
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}(callback: '[0 => class bac...', args: '[]')
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(params: '['r' => 'studen...')
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): backend\controllers\StudentController->runAction(id: ''index'', params: '['r' => 'studen...')
+#26 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction(route: ''student/index'', params: '['r' => 'studen...')
+#27 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(request: 'class yii\\web\\R...')
+#28 C:\wamp64\www\advanced\backend\web\index.php(18): yii\web\Application->run()
+#29 {main}
+2024-09-27 08:11:31 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/index'
+    'sort' => 'class'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52150'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex&sort=class'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=student%2Findex&sort=class'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727424691.5164
+    'REQUEST_TIME' => 1727424691
+]
+2024-09-27 08:12:47 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][Error] Error: Object of class backend\models\Student could not be converted to string in C:\wamp64\www\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php:118
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(498): yii\helpers\BaseHtml::encode(Object(backend\models\Student))
+#1 [internal function]: yii\i18n\Formatter->asText(Object(backend\models\Student))
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(463): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(266): yii\i18n\Formatter->format(Object(backend\models\Student), 'text')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Student), 2, 1)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(backend\models\Student), 2, 1)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(backend\models\Student), 2, 1)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#15 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#20 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\StudentController->actionIndex()
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#26 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+2024-09-27 08:12:47 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/index'
+    'sort' => 'class'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52163'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex&sort=class'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=student%2Findex&sort=class'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727424767.8455
+    'REQUEST_TIME' => 1727424767
+]
+2024-09-27 08:13:33 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][Error] Error: Object of class backend\models\Student could not be converted to string in C:\wamp64\www\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php:118
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(498): yii\helpers\BaseHtml::encode(Object(backend\models\Student))
+#1 [internal function]: yii\i18n\Formatter->asText(Object(backend\models\Student))
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(463): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(266): yii\i18n\Formatter->format(Object(backend\models\Student), 'text')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Student), 2, 1)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(backend\models\Student), 2, 1)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(backend\models\Student), 2, 1)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#15 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#20 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\StudentController->actionIndex()
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#26 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+2024-09-27 08:13:33 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/index'
+    'sort' => 'class'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52167'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex&sort=class'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=student%2Findex&sort=class'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727424813.4542
+    'REQUEST_TIME' => 1727424813
+]
+2024-09-27 08:13:49 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][Error] Error: Object of class backend\models\Student could not be converted to string in C:\wamp64\www\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php:118
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(498): yii\helpers\BaseHtml::encode(Object(backend\models\Student))
+#1 [internal function]: yii\i18n\Formatter->asText(Object(backend\models\Student))
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(463): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(266): yii\i18n\Formatter->format(Object(backend\models\Student), 'text')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Student), 2, 1)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(backend\models\Student), 2, 1)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(backend\models\Student), 2, 1)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#15 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#20 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\StudentController->actionIndex()
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#26 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+2024-09-27 08:13:49 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/index'
+    'sort' => 'class'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52171'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex&sort=class'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=student%2Findex&sort=class'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727424829.1092
+    'REQUEST_TIME' => 1727424829
+]
+2024-09-27 08:13:59 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][Error] Error: Object of class backend\models\Student could not be converted to string in C:\wamp64\www\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php:118
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(498): yii\helpers\BaseHtml::encode(Object(backend\models\Student))
+#1 [internal function]: yii\i18n\Formatter->asText(Object(backend\models\Student))
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(463): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(266): yii\i18n\Formatter->format(Object(backend\models\Student), 'text')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Student), 2, 1)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(backend\models\Student), 2, 1)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(backend\models\Student), 2, 1)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#15 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#20 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\StudentController->actionIndex()
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#26 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+2024-09-27 08:13:59 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/index'
+    'sort' => 'class'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52175'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex&sort=class'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=student%2Findex&sort=class'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727424839.3333
+    'REQUEST_TIME' => 1727424839
+]
+2024-09-27 08:14:07 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][Error] Error: Object of class backend\models\Student could not be converted to string in C:\wamp64\www\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php:118
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(498): yii\helpers\BaseHtml::encode(Object(backend\models\Student))
+#1 [internal function]: yii\i18n\Formatter->asText(Object(backend\models\Student))
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(463): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(266): yii\i18n\Formatter->format(Object(backend\models\Student), 'text')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Student), 2, 1)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(backend\models\Student), 2, 1)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(backend\models\Student), 2, 1)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#15 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#20 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\StudentController->actionIndex()
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#26 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+2024-09-27 08:14:07 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/index'
+    'sort' => 'class'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52179'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex&sort=class'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=student%2Findex&sort=class'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727424847.1251
+    'REQUEST_TIME' => 1727424847
+]
+2024-09-27 08:14:08 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][Error] Error: Object of class backend\models\Student could not be converted to string in C:\wamp64\www\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php:118
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(498): yii\helpers\BaseHtml::encode(Object(backend\models\Student))
+#1 [internal function]: yii\i18n\Formatter->asText(Object(backend\models\Student))
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(463): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(266): yii\i18n\Formatter->format(Object(backend\models\Student), 'text')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Student), 2, 1)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(backend\models\Student), 2, 1)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(backend\models\Student), 2, 1)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#15 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#20 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\StudentController->actionIndex()
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#26 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+2024-09-27 08:14:07 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/index'
+    'sort' => 'class'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52180'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex&sort=class'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=student%2Findex&sort=class'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727424847.9406
+    'REQUEST_TIME' => 1727424847
+]
+2024-09-27 08:28:51 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\DataColumn::prompt in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\BaseObject->__set('prompt', Array)
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\grid\DataColumn), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\grid\\DataCo...', Array, Array)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\grid\\DataCo...', Array, Array)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(549): yii\BaseYii::createObject(Array)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\grid\GridView->initColumns()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\grid\GridView->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(143): yii\BaseYii::createObject(Array)
+#14 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\StudentController->actionIndex()
+#21 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#27 {main}
+2024-09-27 08:28:51 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'StudentSearch' => [
+        'name' => ''
+        'class' => ''
+        'house' => ''
+    ]
+    'r' => 'student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=Red&r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52442'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727425731.3247
+    'REQUEST_TIME' => 1727425731
+]
+2024-09-27 08:29:12 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\DataColumn::prompt in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\BaseObject->__set('prompt', Array)
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\grid\DataColumn), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\grid\\DataCo...', Array, Array)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\grid\\DataCo...', Array, Array)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(549): yii\BaseYii::createObject(Array)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\grid\GridView->initColumns()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\grid\GridView->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(143): yii\BaseYii::createObject(Array)
+#14 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\StudentController->actionIndex()
+#21 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#27 {main}
+2024-09-27 08:29:12 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'StudentSearch' => [
+        'name' => ''
+        'class' => ''
+        'house' => ''
+    ]
+    'r' => 'student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=Red&r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52448'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727425752.3724
+    'REQUEST_TIME' => 1727425752
+]
+2024-09-27 08:29:14 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\DataColumn::prompt in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\BaseObject->__set('prompt', Array)
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\grid\DataColumn), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\grid\\DataCo...', Array, Array)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\grid\\DataCo...', Array, Array)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(549): yii\BaseYii::createObject(Array)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\grid\GridView->initColumns()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\grid\GridView->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(143): yii\BaseYii::createObject(Array)
+#14 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\StudentController->actionIndex()
+#21 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#27 {main}
+2024-09-27 08:29:14 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'StudentSearch' => [
+        'name' => ''
+        'class' => ''
+        'house' => ''
+    ]
+    'r' => 'student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=Red&r=student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52449'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727425754.0995
+    'REQUEST_TIME' => 1727425754
+]
+2024-09-27 09:01:55 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\DataColumn::filterInput in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\BaseObject->__set('filterInput', Array)
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\grid\DataColumn), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\grid\\DataCo...', Array, Array)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\grid\\DataCo...', Array, Array)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(549): yii\BaseYii::createObject(Array)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\grid\GridView->initColumns()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\grid\GridView->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(143): yii\BaseYii::createObject(Array)
+#14 C:\wamp64\www\advanced\backend\views\student\index.php(26): yii\base\Widget::widget(Array)
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#19 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\StudentController->actionIndex()
+#21 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#27 {main}
+2024-09-27 09:01:55 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'r' => 'student/index'
+    'StudentSearch' => [
+        'name' => ''
+        'class' => ''
+        'house' => ''
+    ]
+    'page' => '1'
+    'per-page' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?r=student%2Findex&StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&page=1&per-page=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52731'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex&StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&page=1&per-page=2'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=student%2Findex&StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&page=1&per-page=2'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727427715.7136
+    'REQUEST_TIME' => 1727427715
+]
+2024-09-27 09:13:19 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\data\ActiveDataProvider::style in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Component.php:217
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\Component->__set('style', 'default')
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\ActiveDataProvider), Array)
+#2 C:\wamp64\www\advanced\backend\models\StudentSearch.php(47): yii\base\BaseObject->__construct(Array)
+#3 C:\wamp64\www\advanced\backend\controllers\StudentController.php(42): backend\models\StudentSearch->search(Array)
+#4 [internal function]: backend\controllers\StudentController->actionIndex()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2024-09-27 09:13:19 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'StudentSearch' => [
+        'name' => ''
+        'class' => ''
+        'house' => ''
+    ]
+    'r' => 'student/index'
+    'page' => '1'
+    'per-page' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=Blue&r=student%2Findex&page=1&per-page=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52890'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727428399.6669
+    'REQUEST_TIME' => 1727428399
+]
+2024-09-27 09:13:33 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\data\ActiveDataProvider::paginationStyle in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Component.php:217
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\Component->__set('paginationStyle', 'default')
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\ActiveDataProvider), Array)
+#2 C:\wamp64\www\advanced\backend\models\StudentSearch.php(47): yii\base\BaseObject->__construct(Array)
+#3 C:\wamp64\www\advanced\backend\controllers\StudentController.php(42): backend\models\StudentSearch->search(Array)
+#4 [internal function]: backend\controllers\StudentController->actionIndex()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2024-09-27 09:13:33 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'StudentSearch' => [
+        'name' => ''
+        'class' => ''
+        'house' => ''
+    ]
+    'r' => 'student/index'
+    'page' => '1'
+    'per-page' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=Blue&r=student%2Findex&page=1&per-page=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52895'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727428413.442
+    'REQUEST_TIME' => 1727428413
+]
+2024-09-27 09:14:56 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\data\ActiveDataProvider::paginationStyle in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Component.php:217
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\Component->__set('paginationStyle', 'default')
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\ActiveDataProvider), Array)
+#2 C:\wamp64\www\advanced\backend\models\StudentSearch.php(47): yii\base\BaseObject->__construct(Array)
+#3 C:\wamp64\www\advanced\backend\controllers\StudentController.php(42): backend\models\StudentSearch->search(Array)
+#4 [internal function]: backend\controllers\StudentController->actionIndex()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2024-09-27 09:14:56 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'StudentSearch' => [
+        'name' => ''
+        'class' => ''
+        'house' => ''
+    ]
+    'r' => 'student/index'
+    'page' => '1'
+    'per-page' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=Blue&r=student%2Findex&page=1&per-page=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52902'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727428496.314
+    'REQUEST_TIME' => 1727428496
+]
+2024-09-27 09:15:16 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\data\ActiveDataProvider::paginationStyle in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Component.php:217
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\Component->__set('paginationStyle', 'default')
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\ActiveDataProvider), Array)
+#2 C:\wamp64\www\advanced\backend\models\StudentSearch.php(47): yii\base\BaseObject->__construct(Array)
+#3 C:\wamp64\www\advanced\backend\controllers\StudentController.php(42): backend\models\StudentSearch->search(Array)
+#4 [internal function]: backend\controllers\StudentController->actionIndex()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2024-09-27 09:15:16 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'StudentSearch' => [
+        'name' => ''
+        'class' => ''
+        'house' => ''
+    ]
+    'r' => 'student/index'
+    'page' => '1'
+    'per-page' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=Blue&r=student%2Findex&page=1&per-page=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52908'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727428516.0262
+    'REQUEST_TIME' => 1727428516
+]
+2024-09-27 09:55:49 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: backend\models\Student::clase in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('clase')
+#1 C:\wamp64\www\advanced\backend\views\student\index.php(92): yii\db\BaseActiveRecord->__get('clase')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\Student), 1, 0, Object(yii\widgets\ListView))
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\ListView.php(193): call_user_func(Object(Closure), Object(backend\models\Student), 1, 0, Object(yii\widgets\ListView))
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\ListView.php(124): yii\widgets\ListView->renderItem(Object(backend\models\Student), 1, 0)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\widgets\ListView->renderItems()
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\widgets\BaseListView->renderSection('{items}')
+#7 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\widgets\BaseListView->run()
+#10 C:\wamp64\www\advanced\backend\views\student\index.php(83): yii\base\Widget::widget(Array)
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#15 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#16 [internal function]: backend\controllers\StudentController->actionIndex()
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#20 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#21 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#23 {main}
+2024-09-27 09:55:49 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'StudentSearch' => [
+        'name' => ''
+        'class' => ''
+        'house' => ''
+    ]
+    'r' => 'student/index'
+    'page' => '1'
+    'per-page' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=Blue&r=student%2Findex&page=1&per-page=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '53149'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727430949.529
+    'REQUEST_TIME' => 1727430949
+]
+2024-09-27 09:56:11 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: backend\models\Student::clase in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('clase')
+#1 C:\wamp64\www\advanced\backend\views\student\index.php(92): yii\db\BaseActiveRecord->__get('clase')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\Student), 1, 0, Object(yii\widgets\ListView))
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\ListView.php(193): call_user_func(Object(Closure), Object(backend\models\Student), 1, 0, Object(yii\widgets\ListView))
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\ListView.php(124): yii\widgets\ListView->renderItem(Object(backend\models\Student), 1, 0)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\widgets\ListView->renderItems()
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\widgets\BaseListView->renderSection('{items}')
+#7 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(134): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\widgets\BaseListView->run()
+#10 C:\wamp64\www\advanced\backend\views\student\index.php(83): yii\base\Widget::widget(Array)
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#15 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#16 [internal function]: backend\controllers\StudentController->actionIndex()
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#20 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#21 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#23 {main}
+2024-09-27 09:56:11 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'StudentSearch' => [
+        'name' => ''
+        'class' => ''
+        'house' => ''
+    ]
+    'r' => 'student/index'
+    'page' => '1'
+    'per-page' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=Blue&r=student%2Findex&page=1&per-page=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '53153'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727430971.0879
+    'REQUEST_TIME' => 1727430971
+]
+2024-09-27 09:56:38 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\widgets\ListView::Options in C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Component.php:217
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\Component->__set('Options', Array)
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\widgets\ListView), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\widgets\\Lis...', Array, Array)
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\widgets\\Lis...', Array, Array)
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Widget.php(143): yii\BaseYii::createObject(Array)
+#7 C:\wamp64\www\advanced\backend\views\student\index.php(83): yii\base\Widget::widget(Array)
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\wamp64\\www\\a...')
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#12 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#13 [internal function]: backend\controllers\StudentController->actionIndex()
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2024-09-27 09:56:38 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'StudentSearch' => [
+        'name' => ''
+        'class' => ''
+        'house' => ''
+    ]
+    'r' => 'student/index'
+    'page' => '1'
+    'per-page' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=Blue&r=student%2Findex&page=1&per-page=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '53166'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727430998.7517
+    'REQUEST_TIME' => 1727430998
+]
+2024-09-27 10:09:19 [::1][10][dsotkqrhqug777gs4k570a8qdn][error][Error] Error: Object of class yii\widgets\Pjax could not be converted to string in C:\wamp64\www\advanced\backend\views\student\index.php:84
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(backend\controllers\StudentController))
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(backend\controllers\StudentController))
+#4 C:\wamp64\www\advanced\backend\controllers\StudentController.php(44): yii\base\Controller->render('index', Array)
+#5 [internal function]: backend\controllers\StudentController->actionIndex()
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('student/index', Array)
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\wamp64\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2024-09-27 10:09:18 [::1][10][dsotkqrhqug777gs4k570a8qdn][info][application] $_GET = [
+    'StudentSearch' => [
+        'name' => ''
+        'class' => ''
+        'house' => ''
+    ]
+    'r' => 'student/index'
+    'page' => '1'
+    'per-page' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'illhrbr59qc1qk57msctoajjol'
+    '_csrf-frontend' => 'e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK\";}'
+    'advanced-backend' => 'dsotkqrhqug777gs4k570a8qdn'
+    '_identity-backend' => 'a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[10,\"QDVDYX0726-e7dH69sD2PFItDWsjvxax\",2592000]\";}'
+    '_csrf-backend' => 'c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/advanced/backend/web/index.php'
+    '__id' => 10
+    '__authKey' => 'QDVDYX0726-e7dH69sD2PFItDWsjvxax'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=Blue&r=student%2Findex&page=1&per-page=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=illhrbr59qc1qk57msctoajjol; _csrf-frontend=e74cadaaceec32809dca29deb5e453d5c08e10811fe1ad289999fff3471b10eaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iZ-D3GmcjLJ2hDwVs-Pccd2g6Jw-72DK%22%3B%7D; advanced-backend=dsotkqrhqug777gs4k570a8qdn; _identity-backend=a7fd6d29cc0f7264966eeb154fe74a2a57ff5b08d08647137ff7246adfc30c0ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22QDVDYX0726-e7dH69sD2PFItDWsjvxax%22%2C2592000%5D%22%3B%7D; _csrf-backend=c3a2c9a6c5afd6c75349ecb32ac432828ae0b746c8a7ff5a163a12b99cea314aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LwcAR_7h63HeNGqvjdZlcnV6_U2Og43W%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\wamp64\\bin\\php\\php8.3.6;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '53224'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?StudentSearch%5Bname%5D=&StudentSearch%5Bclass%5D=&StudentSearch%5Bhouse%5D=&r=student%2Findex&page=1&per-page=4'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1727431758.9831
+    'REQUEST_TIME' => 1727431758
+]
