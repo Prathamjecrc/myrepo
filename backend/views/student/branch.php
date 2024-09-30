@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Testing for the new branch</h1>
+    <h1> Merge for the new branch V6</h1>
 </body>
 </html>
